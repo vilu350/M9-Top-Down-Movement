@@ -8,16 +8,34 @@
 [node name="Game" type="Node2D"]
 y_sort_enabled = true
 
-[node name="Runner" parent="." instance=ExtResource("1_yasw7")]
-position = Vector2(532, 369)
-
-[node name="SimpleObstacle" parent="." instance=ExtResource("2_4o7yg")]
-position = Vector2(401, 303)
-
 [node name="CircuitBackground" type="Sprite2D" parent="."]
 z_index = -1
 texture = ExtResource("3_gkp25")
 metadata/_edit_lock_ = true
+
+[node name="Runner" parent="." instance=ExtResource("1_yasw7")]
+position = Vector2(515, -789)
+
+[node name="SimpleObstacle" parent="." instance=ExtResource("2_4o7yg")]
+position = Vector2(386, 283)
+
+[node name="SimpleObstacle2" parent="." instance=ExtResource("2_4o7yg")]
+position = Vector2(-487, -829)
+
+[node name="SimpleObstacle3" parent="." instance=ExtResource("2_4o7yg")]
+position = Vector2(-148, -962)
+
+[node name="SimpleObstacle4" parent="." instance=ExtResource("2_4o7yg")]
+position = Vector2(208, -831)
+
+[node name="SimpleObstacle5" parent="." instance=ExtResource("2_4o7yg")]
+position = Vector2(-1132, -399)
+
+[node name="SimpleObstacle6" parent="." instance=ExtResource("2_4o7yg")]
+position = Vector2(-1011, -812)
+
+[node name="SimpleObstacle7" parent="." instance=ExtResource("2_4o7yg")]
+position = Vector2(454, -168)
 
 [node name="Circuit" parent="." instance=ExtResource("4_sepuf")]
 metadata/_edit_lock_ = true

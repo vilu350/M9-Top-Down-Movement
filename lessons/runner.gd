@@ -1,7 +1,5 @@
 extends CharacterBody2D
 
-#left off at (creating blocks -> testing the obstacle)
-
 @onready var _skin: Sprite2D = %Skin
 
 const RUNNER = preload("uid://c4jjlttvtvjqc")
