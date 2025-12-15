@@ -9,9 +9,6 @@ radius = 21.0
 [node name="Runner" type="CharacterBody2D"]
 motion_mode = 1
 script = ExtResource("1_h1hi2")
-max_speed = null
-acceleration = null
-deceleration = null
 
 [node name="RunnerVisualRed" parent="." instance=ExtResource("2_h1hi2")]
 unique_name_in_owner = true

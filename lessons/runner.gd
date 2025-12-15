@@ -1,12 +1,11 @@
 extends CharacterBody2D
 
-#left off at Using animations
 
 @export var max_speed := 600.0
 @export var acceleration := 1200.0
 @export var deceleration := 1080.0
 
-@onready var runner_visual_red: RunnerVisual = %RunnerVisualRed
+@onready var _runner_visual: RunnerVisual = %RunnerVisualRed
 
 
 func _physics_process(delta: float) -> void:
@@ -22,3 +21,12 @@ func _physics_process(delta: float) -> void:
 	
 	if direction.length() > 0.0:
 		_runner_visual.angle = rotate_toward(_runner_visual.angle, direction.orthogonal().angle(), 8.0 * delta)
+		var current_speed_percent := velocity.length() / max_speed
+		_runner_visual.animation_name = (
+			RunnerVisual.Animations.WALK
+			if current_speed_percent < 0.8
+			else RunnerVisual.Animations.RUN
+		)
+	else:
+		_runner_visual.animation_name = RunnerVisual.Animations.IDLE
+		
