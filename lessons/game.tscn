@@ -14,7 +14,7 @@ texture = ExtResource("3_gkp25")
 metadata/_edit_lock_ = true
 
 [node name="Runner" parent="." instance=ExtResource("1_yasw7")]
-position = Vector2(515, -789)
+position = Vector2(509, -769)
 
 [node name="SimpleObstacle" parent="." instance=ExtResource("2_4o7yg")]
 position = Vector2(386, 283)
